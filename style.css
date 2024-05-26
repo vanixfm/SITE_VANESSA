@@ -1,0 +1,151 @@
+/* Aplicar Clear Sans ao menu de navegação */
+.navbar, .nav-link, .nav-item p {
+    font-family: 'Clear Sans', sans-serif;
+}
+
+/* Estilo para o contêiner do vídeo */
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Esconder qualquer parte do vídeo que exceda o contêiner */
+}
+
+/* Estilo para o vídeo */
+#promoVideo {
+    width: 100%;     /* Ocupar toda a largura da página */
+    height: 300px;   /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Ajustar o vídeo para cobrir toda a área definida */
+}
+
+/* Estilo para centralizar a imagem */
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; /* Ajuste conforme necessário para diminuir o tamanho da imagem */
+}
+
+/* Estilo para o contêiner do texto */
+.text {
+    text-align: justify;
+    font-family: 'Clear Sans', sans-serif; /* Certifique-se de que a fonte está aplicada corretamente */
+    color: black;
+    margin-top: 20px;
+    line-height: 2.0; /* Ajuste este valor para aumentar ou diminuir o espaçamento entre linhas */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para o contêiner principal da seção */
+#about .content {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para o contêiner dos botões */
+.middle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para os botões */
+.btn::before {
+    background: #ff7675;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 0%; /* Ajuste para ambos os botões */
+    height: 100%; /* Ajuste para ambos os botões */
+}
+.btn1:hover::before,
+.btn2:hover::before { /* Ajuste para ambos os botões */
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    font-family: "Clear Sans", sans-serif; /* Adicione a fonte principal e a lista de fontes de fallback */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px 10px; /* Adicione um espaço entre os botões */
+    border: 2px solid #ff0000;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative; /* Adicione essa propriedade */
+}
+
+/* Estilo para a seção de tecnologia */
+#tecnologia {
+    padding: 50px 0; /* Ajuste conforme necessário */
+    background-color: #f8f9fa; /* Cor de fundo da seção */
+}
+
+/* Estilo para o contêiner da seção */
+#tecnologia .container {
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centralizar o contêiner na página */
+    display: flex;
+    align-items: center; /* Alinhar itens verticalmente */
+}
+
+/* Estilo para a imagem na seção de tecnologia */
+#tecnologia .rounded-image {
+    border-radius: 10px; /* Bordas arredondadas */
+    border: 2px solid black; /* Borda preta */
+    width: 450px; /* Definir a largura desejada */
+    height: 450px; /* Altura automática para manter a proporção */
+    display: block; /* Faz a imagem se comportar como um bloco */
+    float: right; /* Alinha a imagem à esquerda */
+    margin-right: 20px; /* Adiciona margem à direita */
+    margin-bottom: 20px; /* Adiciona margem na parte inferior */
+}
+
+/* Estilo para o contêiner do texto na seção de tecnologia */
+#tecnologia .text-container {
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o contêiner */
+}
+
+/* Estilo para o texto na seção de tecnologia */
+#tecnologia .text {
+    border: 2px solid black; /* Borda preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-right: 20px;
+    margin-bottom: 20px; /* Adiciona margem na parte inferior */
+    clear: both; /* Limpa as margens flutuantes */
+}
+
+/* Estilo para dispositivos móveis */
+@media (max-width: 767px) {
+    /* Ajuste o tamanho da imagem */
+    #tecnologia .rounded-image {
+        width: 100%; /* Defina a largura máxima da imagem como 100% para ocupar todo o contêiner */
+        margin-right: 0; /* Remova a margem à direita */
+        margin-bottom: 20px; /* Adicione margem na parte inferior */
+        float: none; /* Remova o alinhamento flutuante */
+    }
+
+    /* Ajuste o posicionamento do texto */
+    #tecnologia .text-container {
+        margin-top: 20px; /* Adicione uma margem superior para separar do vídeo acima */
+        text-align: center; /* Centralize o texto */
+    }
+
+    /* Ajuste a largura da borda do texto */
+    #tecnologia .text {
+        border-width: 1px; /* Reduza a largura da borda para 1px */
+        width: 80%; /* Defina a largura do texto para 80% da largura do contêiner */
+        margin: 20px auto; /* Centralize o texto horizontalmente */
+        padding: 10px; /* Adicione preenchimento interno */
+    }
+}
+
+
+
