@@ -8,5 +8,5 @@
 
 
 <a href="#" target="_blank"> 
- <img src="VAN.png" width="330" height="330"/>
+ <img src="VAN.png" width="730" height="330"/>
 </a>
